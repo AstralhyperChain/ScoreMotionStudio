@@ -292,7 +292,7 @@ export class MidiVisualizerRenderer {
     currentTime: number,
     preset: VisualizerPreset,
     is3D: boolean,
-    pitchRad: number,
+    _pitchRad: number,
     _yawRad: number
   ) {
     const keyboardY = height - (preset.piano.showPiano ? preset.piano.keyHeight : 0);
@@ -302,8 +302,6 @@ export class MidiVisualizerRenderer {
     // Lateral keyboard padding
     const pianoWidth = width * 0.94;
     const pianoLeft = (width - pianoWidth) / 2;
-
-    const visibleHorizonTime = currentTime + fallDuration;
     const corridorHeight = keyboardY - (is3D ? height * 0.12 : 20);
 
     ctx.save();
