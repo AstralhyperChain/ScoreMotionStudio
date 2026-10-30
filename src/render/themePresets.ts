@@ -1,0 +1,48 @@
+import { LumenThemeConfig, VisualTheme } from '../types/score';
+
+export const THEME_PRESETS: Record<VisualTheme, LumenThemeConfig> = {
+  'solar-flare': {
+    id: 'solar-flare',
+    name: 'Solar Flare',
+    description: 'Cinematic amber, fiery orange & radiant golden starlight',
+    primary: '#f59e0b',
+    glowColor: 'rgba(245, 158, 11, 0.7)',
+    secondary: '#f97316',
+    accent: '#fbbf24',
+    staffColor: 'rgba(245, 158, 11, 0.22)',
+    backgroundGradient: ['#080706', '#030303'],
+  },
+  'emerald-aurora': {
+    id: 'emerald-aurora',
+    name: 'Emerald Aurora',
+    description: 'Electric cyber emerald, neon mint & luminescent gold',
+    primary: '#10b981',
+    glowColor: 'rgba(16, 185, 129, 0.7)',
+    secondary: '#34d399',
+    accent: '#a3e635',
+    staffColor: 'rgba(16, 185, 129, 0.22)',
+    backgroundGradient: ['#040a07', '#010403'],
+  },
+  'cyber-lumen': {
+    id: 'cyber-lumen',
+    name: 'Cyber Lumen (Polyphonic)',
+    description: 'Prismatic amber, fiery orange, emerald & cyan voice highlights',
+    primary: '#f59e0b',
+    glowColor: 'rgba(245, 158, 11, 0.8)',
+    secondary: '#10b981',
+    accent: '#06b6d4',
+    staffColor: 'rgba(255, 255, 255, 0.15)',
+    backgroundGradient: ['#08080d', '#030305'],
+  },
+  'obsidian-gold': {
+    id: 'obsidian-gold',
+    name: 'Obsidian Gold',
+    description: 'Refined monarch gold on pure velvet obsidian black',
+    primary: '#eab308',
+    glowColor: 'rgba(234, 179, 8, 0.65)',
+    secondary: '#fde047',
+    accent: '#ffffff',
+    staffColor: 'rgba(234, 179, 8, 0.18)',
+    backgroundGradient: ['#070707', '#020202'],
+  },
+};
